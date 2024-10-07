@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
 
-namespace TestProject5
+namespace curious4everautomation
 {
     public class Program
     {
@@ -18,7 +18,7 @@ namespace TestProject5
         }
 
         [Test]
-        public void Test1()
+        public void registration_fails_with_empty_name()
         {
             driver.Navigate().GoToUrl("https://app-linux-test-curious4ever-user.azurewebsites.net/registration");
             System.Threading.Thread.Sleep(2000);
@@ -51,7 +51,7 @@ namespace TestProject5
         }
 
         [Test]
-        public void Test2()
+        public void registration_fails_with_incorrect_email()
         {
             driver.Navigate().GoToUrl("https://app-linux-test-curious4ever-user.azurewebsites.net/registration");
             System.Threading.Thread.Sleep(2000);
